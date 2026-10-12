@@ -1,0 +1,31 @@
+{
+  "name": "business-pulse",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config frontend/vite.config.ts",
+    "typecheck": "tsc --noEmit -p frontend/tsconfig.json",
+    "build": "npm run typecheck && vite build --config frontend/vite.config.ts",
+    "test": "vitest run --config frontend/vite.config.ts"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.0.4",
+    "vite": "7.1.12",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "jsdom": "26.1.0",
+    "tailwindcss": "3.4.17",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.6"
+  }
+}
